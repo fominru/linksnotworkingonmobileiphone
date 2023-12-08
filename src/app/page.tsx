@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import Link from "next/link"
+import {Links} from "@/components/Links/MobileFooter"
 
 const links = [
   {text: "Page 1", href: "/page1"},
@@ -12,16 +13,16 @@ export default function Home() {
     </main>
   )
 
-  function Links() {
-    return (<div className={styles.grid}>
-      {links?.map((link, key) =>
-        <Link key={key} href={link.href} className={styles.card}>
-          <h2>{link.text}</h2>
-          <p>Click me</p>
-        </Link>
-      )}
-    </div>)
-  }
+  // function Links() {
+  //   return (<div className={styles.grid}>
+  //     {links?.map((link, key) =>
+  //       <Link key={key} href={link.href} className={styles.card}>
+  //         <h2>{link.text}</h2>
+  //         <p>Click me</p>
+  //       </Link>
+  //     )}
+  //   </div>)
+  // }
 }
 
 
